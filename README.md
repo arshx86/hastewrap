@@ -61,4 +61,4 @@ var Hastebin = new HasteBIN(new Config() // Pass null or leave as empty to use d
 
 ## Packages
 
-Library made with [Leaf.xNet]https://github.com/csharp-leaf/Leaf.xNet library.
+Library made with [Leaf.xNet](https://github.com/csharp-leaf/Leaf.xNet) library.
