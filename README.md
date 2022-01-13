@@ -1,7 +1,5 @@
 # hastewrap
-Minimalized Hastebin Wrapper Client Library
-
-A minimalized hastebin wrapper for uploding data to hastebin or reading from it.
+Hastebin Wrapper Library
 
 ## Installation
 
@@ -60,3 +58,7 @@ var Hastebin = new HasteBIN(new Config() // Pass null or leave as empty to use d
   UserAgent = "Custom User Agent"
 });
 ```
+
+## Packages
+
+Library made with [Leaf.xNet]https://github.com/csharp-leaf/Leaf.xNet library.
