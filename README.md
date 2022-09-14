@@ -19,46 +19,36 @@ using HasteWRAP;
 using HasteWRAP;
 
 var Hastebin = new HasteBIN();
-string UploadLink = Hastebin.CreateHaste("Hello from hastewrap!");
-Console.WriteLine(UploadLink);
+string UploadLink = Hastebin.Create("Hello world!");
+Console.WriteLine(UploadLink); // output: # https://hastebin.com/raw/xxx
 ```
-
-The `Hastebin.CreateHaste();` will return link of uploaded data.
-
 > You can also read the whole content of text file then upload it with this code.
 
 ```csharp
 using HasteWRAP;
 
 var Hastebin = new HasteBIN();
-string UploadLink = Hastebin.CreateHasteFromFile("C:\\somefile.txt");
+string UploadLink = Hastebin.CreateFromFile("C:\\somefile.txt");
 Console.WriteLine(UploadLink);
 ```
 
-## Reading text 
-
-You can also use hastewrap to read text from hastebin links.
+## Reading  
 
 ```csharp
 using HasteWRAP;
 
 var Hastebin = new HasteBIN();
-string ReadedText = Hastebin.GetHaste("https://www.toptal.com/developers/hastebin/karonigili.py"); // or you can pass only the code
+string ReadedText = Hastebin.Get("https://hastebin.com/about.md"); // or Get("key")
 Console.WriteLine(ReadedText);
 ```
 
-## Config Support
-
-HasteWRAP also supports custom proxy & user agent properties. 
+## Proxy Support
 
 ```csharp
-var Hastebin = new HasteBIN(new Config() // Pass null or leave as empty to use default config.
-{
-  Proxy = "192.168.1.1:8080",
-  UserAgent = "Custom User Agent"
-});
+var Hastebin = new HasteBIN("192.168.1.1:8080");
 ```
 
 ## Packages
 
 Library made with [Leaf.xNet](https://github.com/csharp-leaf/Leaf.xNet) library.
+Referances to [here](https://hastebin.com/about.md)
