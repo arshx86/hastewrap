@@ -1,6 +1,10 @@
 # hastewrap
 Hastebin Wrapper Library
 
+# Cancelled
+
+Hastebin now requires authentication token, which requires github account. It is pointless to use this library as now.
+
 ## Installation
 
 Add "HasteWRAP.dll" to references.
